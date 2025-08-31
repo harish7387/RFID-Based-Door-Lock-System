@@ -1,15 +1,19 @@
-# RFID-Based-Door-Lock-System
-🚪🔑 A simple RFID-based access control system that uses RFID tags to grant or deny access. Designed for smart security applications like doors, labs, and restricted areas.
+# RFID + Keypad Based Security System
+
+🔒 A dual authentication access control system using RFID tags and a keypad.
+Both RFID card and password entry are required for secure access. Ideal for labs, lockers, offices, and restricted zones.
 
 # ✨ Features
 
-Reads RFID tags using an RFID reader module (e.g., RC522).
+RFID-based user identification.
 
-Authenticates users based on pre-registered IDs.
+Keypad for password entry (extra security).
 
-Grants or denies access with visual (LED) & audio (buzzer) alerts.
+Dual authentication (RFID + PIN).
 
-Can be extended to log data or control electronic locks.
+Visual indicators with LEDs and buzzer alerts.
+
+Extendable for door locks, relays, or logging.
 
 # 🛠️ Components Used
 
@@ -17,34 +21,38 @@ RFID Reader (RC522 / EM-18)
 
 RFID Tags / Cards
 
+4x4 Matrix Keypad
+
 Arduino / ESP32 / Microcontroller
 
 Buzzer
 
-LEDs (Green/Red for status)
+LEDs (Green/Red)
+
+Relay Module (optional, for door lock)
 
 Power supply
 
 # ⚙️ Working
 
-When an RFID tag is scanned, its unique ID is read by the reader.
+User scans RFID card.
 
-The microcontroller compares the ID with stored valid IDs.
+If RFID tag is valid → system asks for PIN via keypad.
 
-If matched → Access is granted (Green LED ON, buzzer beep, door unlock).
+If both RFID & PIN match → Access Granted ✅ (Green LED, buzzer, door unlock).
 
-If not matched → Access denied (Red LED ON, warning buzzer).
+If invalid RFID or wrong PIN → Access Denied ❌ (Red LED, buzzer alert).
 
 
 # 🚀 How to Run
 
-Connect the RFID reader module to Arduino/ESP32 as per circuit diagram.
+Connect RFID reader & keypad to Arduino/ESP32.
 
-Upload the code from the code/ folder.
+Upload code from code/ folder.
 
-Power the system and scan RFID tags.
+Register authorized RFID IDs & set PIN in code.
 
-Modify the code to add/remove authorized IDs.
+Power the system → Scan RFID + enter PIN → access granted.
 
 # 📸 Output
 <img width="658" height="550" alt="Image" src="https://github.com/user-attachments/assets/d11401d1-8e22-4f9f-b55e-add256100464" />
