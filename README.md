@@ -46,5 +46,5 @@ Power the system and scan RFID tags.
 
 Modify the code to add/remove authorized IDs.
 
-# 📸 Circuit Diagram
+# 📸 Output
 <img width="658" height="550" alt="Image" src="https://github.com/user-attachments/assets/d11401d1-8e22-4f9f-b55e-add256100464" />
