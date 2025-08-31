@@ -1,6 +1,4 @@
 # RFID-Based-Door-Lock-System
-RFID Based Security System
-
 🚪🔑 A simple RFID-based access control system that uses RFID tags to grant or deny access. Designed for smart security applications like doors, labs, and restricted areas.
 
 ✨ Features
@@ -48,4 +46,5 @@ Power the system and scan RFID tags.
 
 Modify the code to add/remove authorized IDs.
 
-📸 Demo / Circuit Diagram
+# 📸 Circuit Diagram
+<img width="658" height="550" alt="Image" src="https://github.com/user-attachments/assets/d11401d1-8e22-4f9f-b55e-add256100464" />
