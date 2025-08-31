@@ -1,7 +1,7 @@
 # RFID-Based-Door-Lock-System
 🚪🔑 A simple RFID-based access control system that uses RFID tags to grant or deny access. Designed for smart security applications like doors, labs, and restricted areas.
 
-✨ Features
+# ✨ Features
 
 Reads RFID tags using an RFID reader module (e.g., RC522).
 
@@ -11,7 +11,7 @@ Grants or denies access with visual (LED) & audio (buzzer) alerts.
 
 Can be extended to log data or control electronic locks.
 
-🛠️ Components Used
+# 🛠️ Components Used
 
 RFID Reader (RC522 / EM-18)
 
@@ -25,7 +25,7 @@ LEDs (Green/Red for status)
 
 Power supply
 
-⚙️ Working
+# ⚙️ Working
 
 When an RFID tag is scanned, its unique ID is read by the reader.
 
@@ -36,7 +36,7 @@ If matched → Access is granted (Green LED ON, buzzer beep, door unlock).
 If not matched → Access denied (Red LED ON, warning buzzer).
 
 
-🚀 How to Run
+# 🚀 How to Run
 
 Connect the RFID reader module to Arduino/ESP32 as per circuit diagram.
 
